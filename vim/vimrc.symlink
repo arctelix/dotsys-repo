@@ -1,0 +1,214 @@
+" vundle
+
+set nocompatible              " required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+
+"-------------- vundle plugins  -------------
+" note: older Vundle used Bundle vs Plugin
+
+" Status bar
+Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
+
+" Improoved folding
+Plugin 'tmhedberg/SimpylFold' 
+
+" PEP8 indentation
+Plugin 'vim-scripts/indentpython.vim'
+
+" Auto complete
+Bundle 'Valloric/YouCompleteMe'
+
+" Syntax Checking
+Plugin 'scrooloose/syntastic'
+
+" PEP8 Checker
+Plugin 'nvie/vim-flake8'
+
+" Color schemes
+Plugin 'jnurmine/Zenburn'
+Plugin 'altercation/vim-colors-solarized'
+
+" File system
+Plugin 'scrooloose/nerdtree'
+
+" Tabs
+Plugin 'jistr/vim-nerdtree-tabs'
+
+" Commenting
+Plugin 'scrooloose/nerdcommenter'
+
+" Super Search 
+Plugin 'kien/ctrlp.vim'
+
+" Git integration
+Plugin 'tpope/vim-fugitive'
+
+" Unify vim / tmux pane navigation
+Plugin 'christoomey/vim-tmux-navigator'
+
+" Learn vim the hard way!
+Plugin 'wikitopian/hardmode'
+
+"-------------- end plugins ---------------
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+" - GENERAL
+
+set encoding=utf-8
+syntax on				" syntax highlighting
+set nu 					" line numbering	
+set hlsearch				" highlight search results
+set timeoutlen=1000 ttimeoutlen=0	" Remove delay form esc key
+let mapleader = ","			" Custom  leader
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+" status bar and numbering
+set laststatus=2   			" Always show the statusline
+let g:Powerline_symbols = 'fancy'	" Plowerline fancy symbols
+
+" enable hardmode
+autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+nnoremap <leader>h :call ToggleHardMode()<CR>
+
+" - FOLDING
+
+set foldmethod=indent
+set foldlevel=99
+let g:SimpylFold_docstring_preview=1	" Preview doc strings
+
+
+" - FILE TREE
+
+let NERDTreeIgnore=['\.pyc$', '\~$'] 	"ignore files in NERDTree
+
+" - AUTO COMPLETE
+
+let g:ycm_autoclose_preview_window_after_completion=1
+map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
+
+" - PYTHON RELATED
+
+" Python proper PEP8 indentation
+au BufNewFile,BufRead *.py
+    \ set tabstop=4
+    \ set softtabstop=4
+    \ set shiftwidth=4
+    \ set textwidth=79
+    \ set expandtab
+    \ set autoindent
+    \ set fileformat=unix
+
+" python virtualenv support
+py << EOF
+import os
+import sys
+if 'VIRTUAL_ENV' in os.environ:
+  project_base_dir = os.environ['VIRTUAL_ENV']
+  activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+  execfile(activate_this, dict(__file__=activate_this))
+EOF
+
+" python syntax highlighting
+let python_highlight_all=1
+
+" Hint extranious white space
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+
+" JS HTML CSS RELATED
+
+au BufNewFile,BufRead *.js, *.html, *.css
+    \ set tabstop=2
+    \ set softtabstop=2
+    \ set shiftwidth=2
+
+
+" - COLOR
+
+
+let g:solarized_termcolors = 256
+
+if has('gui_running')
+  "set background=dark
+  colorscheme solarized
+  call togglebg#map("<F5>")
+else
+  colorscheme zenburn
+endif
+
+" - KEY MAPS
+
+
+" fix meta-keys which generate <Esc>a .. <Esc>z
+let c='a'
+while c <= 'z'
+  exec "set <M-".c.">=\e".c
+  exec "imap \e".c." <M-".c.">"
+  exec "set <M-".toupper(c).">=\e".toupper(c)
+  exec "imap \e".toupper(c)." <M-".toupper(c).">"
+  let c = nr2char(1+char2nr(c))
+endw
+
+" split navigations (replaced by  vim-tmux-navigator)
+"nnoremap <C-J> <C-W><C-J>
+"nnoremap <C-K> <C-W><C-K>
+"nnoremap <C-L> <C-W><C-L>
+"nnoremap <C-H> <C-W><C-H>
+
+" sane split resizing (mirros .tmux.conf)
+autocmd VimResized * wincmd =
+
+nnoremap <M-k> <C-W>-
+nnoremap <M-j> <C-W>+
+nnoremap <M-l> <C-W>>
+nnoremap <M-h> <C-W><
+
+" move windows
+nnoremap <M-K> <C-W>K
+nnoremap <M-J> <C-W>J
+nnoremap <M-L> <C-W>L
+nnoremap <M-H> <C-W>H
+
+" zooom split to tab
+"nnoremap <expr> <M-z> exists("t:z_tab")
+"  \ ? ':tabc<CR>' : ':tab sp<CR>:let t:z_tab=1<CR>'
+nnoremap <M-z> :ZoomTab<CR>
+command! ZoomTab call s:ZoomTabTog()
+
+function! s:ZoomTabTog()
+  if exists("t:z_tab")
+    execute "tabc"
+  else
+    execute "tab sp"
+    let t:z_tab=1
+  endif
+endfunction
+
+" Press F4 to toggle highlighting on/off, and show current value.
+noremap <F4> :set hlsearch! hlsearch?<CR>
+
+" Enable folding with the spacebar
+nnoremap <space> za
+
+"Paste Mode
+set pastetoggle=<M-p>
+
+" Copy to system clipboard
+vnoremap <C-c> "*y
+
+
+"----------------
+" PLUGIN KEY MAPS
+"----------------
+
+" Nerdtree
+map <C-n> :NERDTreeToggle<CR>
