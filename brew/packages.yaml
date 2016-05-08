@@ -1,7 +1,5 @@
-# Make sure to add a blank line at end
-cmake: yes
-gdal: yes
+cmake: 
+gdal: 
 jpeg: no
-python: yes
-
+python:
 

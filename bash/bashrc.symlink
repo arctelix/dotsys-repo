@@ -3,7 +3,7 @@
 # -----------------------------------
 # http://superuser.com/questions/789448/choosing-between-bashrc-profile-bash-profile-etc
 
-echo "bashrc loaded"
+echo "arctelix bashrc loaded"
 
 # pip should only run if there is a virtualenv currently activated
 export PIP_REQUIRE_VIRTUALENV=true
@@ -17,5 +17,3 @@ gpip(){
 #    . $(brew --prefix)/etc/bash_completion
 #fi
 
-# FOR TESTING
-alias fuck_bashrc='echo "bashrc: fuck this shit!"'

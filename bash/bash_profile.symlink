@@ -1,20 +1,6 @@
-echo "bash_profile loaded"
-
-#set architecture flags
-export ARCHFLAGS="-arch x86_64"
-
-# Load .profile if it exists
-test -f ~/.profile && source ~/.profile
-
-# Load .bashrc if it exists
-test -f ~/.bashrc && source ~/.bashrc
-
-
 # --------------------------------
 # SOURCED BY BASH LOGIN SHELL ONLY
 # --------------------------------
 
+echo "arctelix bash_profile loaded"
 
-
-# FOR TESTING
-alias fuck_bash='echo "bash_profile: fuck this shit!"'
