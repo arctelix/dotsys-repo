@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo "gulp aliases loaded"
+
+alias gulp-init-django='gulp_init_django'
+
