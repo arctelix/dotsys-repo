@@ -5,8 +5,5 @@
 
 echo "arctelix profile loaded"
 
-# ALIASES
-alias vim='mvim -v'
-
 
 

@@ -1,0 +1,6 @@
+echo "finder.setting"
+
+# Show hidden files in finder
+show_hidden_files () {
+    echo "show_hidden_files"
+}

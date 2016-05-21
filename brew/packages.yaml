@@ -1,5 +1,5 @@
 cmake: 
 gdal: 
-jpeg: no
+jpeg: x
 python:
 

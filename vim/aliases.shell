@@ -1,0 +1,6 @@
+#!/bin/sh
+echo 'vim/aliases.shell loaded'
+alias vim='mvim -v'
+
+alias fuck='echo thank you'
+
