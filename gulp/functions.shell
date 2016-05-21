@@ -1,7 +1,5 @@
 #!/bin/sh
 
-echo "gulp functions loaded"
-
 gulp_init_django () {
     echo "gulp pwd: $PWD"
     #npm init

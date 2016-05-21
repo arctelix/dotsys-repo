@@ -1,9 +1,8 @@
 # -----------------------------------
 # SOURCED EVERY TIME BASH IS EXECUTED
 # -----------------------------------
-# http://superuser.com/questions/789448/choosing-between-bashrc-profile-bash-profile-etc
 
-echo "arctelix bashrc loaded"
+echo "  arctelix .bashrc loaded"
 
 # pip should only run if there is a virtualenv currently activated
 export PIP_REQUIRE_VIRTUALENV=true
