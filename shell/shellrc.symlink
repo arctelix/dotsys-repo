@@ -3,7 +3,7 @@
 # (sh, bash, ksh, etc.)
 # ----------------------------------
 
-echo "arctelix .shellrc loaded"
+echo "  - arctelix .shellrc loaded"
 
 
 
