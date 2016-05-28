@@ -5,3 +5,5 @@ install () {
   brew tap homebrew/dupes
   brew tap Goles/battery
 }
+
+"$@"
