@@ -1,4 +1,5 @@
 #!/bin/sh
 
 alias vim='mvim -v'
+echo "  - arctelix vim aliases loaded"
 
