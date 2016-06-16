@@ -2,8 +2,4 @@
 # SOURCED BY ALL BORNE LOGIN SHELLS
 # (sh, bash, ksh, etc.)
 # ----------------------------------
-
-echo "  - arctelix .profile loaded"
-
-
-
+echo "  - arctelix .profile.symlink loaded"

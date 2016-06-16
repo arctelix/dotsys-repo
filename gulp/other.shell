@@ -1,0 +1,5 @@
+#!/bin/sh
+
+some_other_func () {
+    echo "gulp/other/test.shell"
+}
