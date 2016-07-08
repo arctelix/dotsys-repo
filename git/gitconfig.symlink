@@ -1,0 +1,8 @@
+[push]
+	default = matching
+[core]
+	trustctime = false
+	autocrlf = true
+[user]
+	name = arctelix
+	email = arctelix@gmail.com

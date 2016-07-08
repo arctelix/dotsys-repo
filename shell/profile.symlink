@@ -1,5 +1,1 @@
-# ----------------------------------
-# SOURCED BY ALL BORNE LOGIN SHELLS
-# (sh, bash, ksh, etc.)
-# ----------------------------------
-echo "  - arctelix .profile.symlink loaded"
+echo "custom .profile loaded!"
