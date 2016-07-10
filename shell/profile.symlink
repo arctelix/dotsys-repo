@@ -1,1 +1,1 @@
-echo "custom .profile loaded!"
+debug_shell "  - arctelix .profile.symlink loaded"

@@ -1,5 +1,8 @@
 #!/bin/sh
 
-alias vim='mvim -v'
-echo "  - arctelix vim aliases loaded"
+debug_shell "  - arctelix vim aliases loaded"
+
+if [ "$PLATFORM_SPE" = mac ]; then
+    alias vim='mvim -v'
+fi
 

@@ -1,3 +1,5 @@
+debug_shell "  - arctelix .babunrc loaded"
+
 # JVM options
 export JAVA_OPTS="-Xms128m -Xmx256m"
 

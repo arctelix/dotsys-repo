@@ -2,4 +2,4 @@
 # SOURCED BY ALL BORNE LOGIN SHELLS
 # (sh, bash, ksh, etc.)
 # ----------------------------------
-echo "  - arctelix .shellrc.symlink loaded"
+debug_shell "  - arctelix .shellrc.symlink loaded"
