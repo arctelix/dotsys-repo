@@ -1,0 +1,7 @@
+<templateSet group="JP-JavaScript">
+  <template name="klass" value="var KlassName = function(){&#10;    // Model&#10;    this.initModel()&#10;    // View&#10;    this.initView()&#10;    // Controller&#10;    this.initCtrl()&#10;};&#10;KlassName.prototype = function () {&#10;    // Model&#10;    function initModel () {&#10;&#10;    }&#10;    // View&#10;    function initView () {&#10;&#10;    }&#10;    // Controller&#10;    function initCtrl () {&#10;&#10;    }&#10;    return {&#10;        initModel:initModel, &#10;        initView:initView, &#10;        initCtrl:initCtrl&#10;    }&#10;}();" description="Define a new class" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>

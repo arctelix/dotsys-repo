@@ -1,0 +1,48 @@
+<application>
+  <component name="PropertiesComponent">
+    <property name="log.debug.categories" value="" />
+    <property name="DefaultHtmlDoctype.MigrateToHtml5" value="true" />
+    <property name="DefaultHtmlDoctype.Refreshed" value="1" />
+    <property name="PyCharm.InitialConfiguration" value="true" />
+    <property name="PyCharm.InitialConfiguration.V2" value="true" />
+    <property name="PyCharm.InitialConfiguration.V3" value="true" />
+    <property name="PyCharm.InitialConfiguration.V4" value="true" />
+    <property name="PyCharm.InitialConfiguration.V5" value="true" />
+    <property name="installation.uid" value="59bef965-c71f-4b52-ac7b-e7e4fd73abad" />
+    <property name="fileTypeChangedCounter" value="19" />
+    <property name="PyCharm.initialConfigurationShown" value="true" />
+    <property name="export.settings.path" value="$APPLICATION_CONFIG_DIR$/settings.jar" />
+    <property name="DeploymentNotificationsComponent.WarnDisplayed.Java7&amp;Windows7FTPIssue" value="false" />
+    <property name="file.colors.enable.non.project" value="494539" />
+    <property name="Non-Project Files" value="494539" />
+    <property name="lastTip" value="29" />
+    <property name="ChangesViewManager.DETAILS_SPLITTER_PROPORTION" value="0.5" />
+    <property name="ExpandEnvironmentPanel" value="true" />
+    <property name="ExpandBeforeRunStepsPanel" value="true" />
+    <property name="RunConfigurable.dividerProportion" value="0.3" />
+    <property name="CommitChangeListDialog.SPLITTER_PROPORTION_2" value="0.5" />
+    <property name="CommitChangeListDialog.DETAILS_SHOW_OPTION_" value="false" />
+    <property name="FindSplitterProportion" value="0.28268924" />
+    <property name="MoveFile.OpenInEditor" value="false" />
+    <property name="SingleInspectionProfilePanel.VERTICAL_DIVIDER_PROPORTION" value="0.5" />
+    <property name="SingleInspectionProfilePanel.HORIZONTAL_DIVIDER_PROPORTION" value="0.5" />
+    <property name="ColorChooser.RecentColors" value="65-64-70-229,,,241-239-255-255,,,0-0-0-35,,,255-255-255-255,,,255-255-255-127,,,44-57-149-255,,,21-61-149-255,,,0-77-149-255" />
+    <property name="color.picker.is.hsb" value="false" />
+    <property name="js.rename.search.in.comments" value="false" />
+    <property name="js.rename.search.for.text.occurrences" value="false" />
+    <property name="com.intellij.openapi.editor.actions.MultiplePasteAction$1.splitter" value="0.3" />
+    <property name="Copy.OpenInEditor" value="true" />
+    <property name="ProjectStructure.SecondLevelElements" value="0.2" />
+    <property name="KEYMAP" value="find&#10;comment&#10;copy" />
+    <property name="TEMPLATES_FILTER_HISTORY" value="" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/.dotfiles/.dotsys&#10;/Volumes/Users/Justin/AppData/Roaming/Kodi/addons/script.istream.dialogs&#10;/Users/arctelix/Documents/GitHub/dob/dob/development.py&#10;/Users/JustinPogrob/Documents/GitHub/dob&#10;/Users/JustinPogrob/Documents/GitHub/dob/dob/settings.py&#10;/Users/JustinPogrob/Documents/GitHub/dob/dob" />
+    <property name="OpenOrAttachDialog.OpenMode" value="new" />
+    <property name="PLUGIN_FILTER" value="mark&#10;markdown" />
+    <property name="SplitFileEditor.Proportion" value="0.5" />
+    <property name="com.intellij.diagnostic.IdeErrorsDialogactiveTab" value="-1" />
+    <property name="FileTemplates.CurrentTab" value="Templates" />
+    <property name="FileTemplates.SelectedTemplate" value="Shell Script" />
+    <property name="dir.diff.space.button.info" value="2" />
+    <property name="dir.diff.panel.divider.location" value="347" />
+  </component>
+</application>
