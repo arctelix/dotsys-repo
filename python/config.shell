@@ -1,0 +1,9 @@
+# only allow pip in active virtualenv
+export PIP_REQUIRE_VIRTUALENV=true
+
+# global pip command
+gpip () {
+   PIP_REQUIRE_VIRTUALENV=""
+   pip "$@"
+   PIP_REQUIRE_VIRTUALENV=true
+}

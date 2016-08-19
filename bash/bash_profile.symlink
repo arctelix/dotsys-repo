@@ -2,5 +2,5 @@
 # SOURCED BY BASH LOGIN SHELL ONLY
 # --------------------------------
 
-echo "  - arctelix .bash_profile loaded"
+debug_shell "  - arctelix .bash_profile loaded"
 

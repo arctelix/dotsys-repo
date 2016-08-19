@@ -1,0 +1,36 @@
+<application>
+  <component name="TemplateSettings">
+    <option name="deletedKeys">
+      <list>
+        <TemplateKey>
+          <option name="groupName" value="Bash" />
+          <option name="key" value="while" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Bash" />
+          <option name="key" value="until" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Bash" />
+          <option name="key" value="she" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Bash" />
+          <option name="key" value="cap" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Bash" />
+          <option name="key" value="cap2" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Bash" />
+          <option name="key" value="cap3" />
+        </TemplateKey>
+        <TemplateKey>
+          <option name="groupName" value="Bash" />
+          <option name="key" value="ifee" />
+        </TemplateKey>
+      </list>
+    </option>
+  </component>
+</application>

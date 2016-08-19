@@ -1,0 +1,68 @@
+<templateSet group="Bash">
+  <template name="if" value="if [ &quot;$test$&quot; ]; then&#10;    $END$&#10;fi" description="if statement" toReformat="false" toShortenFQNames="false">
+    <variable name="test" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="ife?" value="if [ $? -eq 0 ]; then&#10;    $cmd$&#10;else &#10;    $END$&#10;fi" description="if-else statement for $? test" toReformat="false" toShortenFQNames="false">
+    <variable name="cmd" expression="" defaultValue="&quot;echo&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Bash" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="ifeq" value="if [ $? -eq 0 ]; then $cmd$;fi" description="if $? test" toReformat="false" toShortenFQNames="true">
+    <variable name="cmd" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Bash" value="true" />
+    </context>
+  </template>
+  <template name="if=" value="if [ &quot;$test$&quot; = &quot;$test2$&quot; ]; then&#10;    $END$&#10;fi" toReformat="false" toShortenFQNames="true">
+    <variable name="test" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="test2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Bash" value="true" />
+    </context>
+  </template>
+  <template name="ifei" value="if [ &quot;$test$&quot; ]; then&#10;    $cmd$&#10;elif [ &quot;$test2$&quot; ]&#10;    $END$&#10;fi" toReformat="false" toShortenFQNames="true">
+    <variable name="test" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="cmd" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="test2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Bash" value="true" />
+    </context>
+  </template>
+  <template name="opt" value="usage=&quot;$cmd$ [&lt;option&gt;]&quot;&#10;usage_full=&quot;&#10;    -$abr$ | --$opt$        $desc$                     &#10;&quot;&#10;&#10;local $opt$&#10;&#10;while [[ $# &gt; 0 ]]; do&#10;    case &quot;$1&quot; in&#10;    -$abr$ | --$opt$ )      $opt$=&quot;$1&quot; ;;&#10;    *)  invalid_option ;;&#10;    esac&#10;    shift&#10;done" description="create options  case" toReformat="false" toShortenFQNames="true">
+    <variable name="cmd" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="abr" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="opt" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="desc" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Bash" value="true" />
+    </context>
+  </template>
+  <template name="ife" value="if [ &quot;$var$&quot; ]; then&#10;    $cmd$&#10;else &#10;    $END$&#10;fi" description="if-else statement for &quot;$var&quot;" toReformat="false" toShortenFQNames="false">
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="cmd" expression="" defaultValue="&quot;echo&quot;" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="if?" value="if [ $? -eq 0 ]; then $END$; fi" description="if statement" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="Bash" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="cas" value="case &quot;$1&quot; in&#10;$c1$) &quot;$a1$&quot;;;&#10;$c2$) &quot;$a2$&quot;;;&#10;$c3$) &quot;$a3$&quot;;;&#10;$c4$) &quot;$a4$&quot;;;&#10;$c5$) &quot;$a5$&quot;;;&#10;*) &quot;$end$&quot; ;;&#10;esac&#10;shift" description="Create case statement" toReformat="false" toShortenFQNames="true">
+    <variable name="c1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="a1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="c2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="a2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="c3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="a3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="c4" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="a4" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="c5" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="a5" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+</templateSet>

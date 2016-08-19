@@ -2,16 +2,13 @@
 # SOURCED EVERY TIME BASH IS EXECUTED
 # -----------------------------------
 
-echo "  - arctelix .bashrc loaded"
+debug_shell "  - arctelix .bashrc loaded"
 
-# pip should only run if there is a virtualenv currently activated
-export PIP_REQUIRE_VIRTUALENV=true
+if [ "$PLATFORM_S" = mac ];then
 
-gpip(){
-   PIP_REQUIRE_VIRTUALENV="" pip "$@"
-}
+    # Activate bash completion
+    if [ -f $(brew --prefix)/etc/bash_completion ]; then
+        . $(brew --prefix)/etc/bash_completion
+    fi
 
-# Activate bash completion
-#if [ -f $(brew --prefix)/etc/bash_completion ]; then
-#    . $(brew --prefix)/etc/bash_completion
-#fi
+fi

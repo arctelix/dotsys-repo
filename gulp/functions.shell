@@ -1,9 +1,9 @@
-#!/bin/sh
+# Gulp functions
 
 gulp_init_django () {
     echo "gulp pwd: $PWD"
     #npm init
     #npm install gulp --save-dev
     #npm install gulp-sass gulp-autoprefixer gulp-cssnano gulp-jshint gulp-concat gulp-uglify gulp-imagemin gulp-notify gulp-rename gulp-livereload gulp-cache del --save-dev
-    cp "$dfd/arctelix/gulp/guplfile-django.js" "$PWD/gulpfile.js"
+    cp "$DOTFILES_DIR/arctelix/gulp/guplfile-django.js" "$PWD/gulpfile.js"
 }
