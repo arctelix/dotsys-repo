@@ -1,13 +1,6 @@
 <application>
   <component name="FindRecents">
     <findStrings>
-      <find>checkout</find>
-      <find>check</find>
-      <find>init_local</find>
-      <find>sync</find>
-      <find>&lt;&lt;</find>
-      <find>indent_lines</find>
-      <find>INSTALL DOT</find>
       <find>repo_dir</find>
       <find>setup_git_config</find>
       <find>verbose_mode</find>
@@ -24,17 +17,22 @@
       <find>is_shell_topic</find>
       <find>flag</find>
       <find>.sources</find>
-      <find>flag_reload</find>
       <find>symlink_topic</find>
       <find>get_user_or_builtin</find>
       <find>get_symlink_dst</find>
       <find>symlinks</find>
       <find>symlink</find>
+      <find>flag_reload</find>
+      <find>Already linked</find>
+      <find>gen_state_key</find>
+      <find>user data</find>
+      <find>load_source_file</find>
+      <find>$PLATFORM</find>
+      <find>cache_bin_path</find>
+      <find>cache_platform</find>
       <find>dprint</find>
     </findStrings>
     <replaceStrings>
-      <replace>addInstanceProps</replace>
-      <replace>uniqueOptions</replace>
       <replace>current</replace>
       <replace>omit</replace>
       <replace>original</replace>
@@ -62,10 +60,11 @@
       <replace>PLATFORM__S</replace>
       <replace>PLATFORM_S</replace>
       <replace>PLATFORM_G</replace>
+      <replace>g_state_key</replace>
+      <replace>_cache_platform</replace>
       <replace>debug</replace>
     </replaceStrings>
     <dirStrings>
-      <dir>$USER_HOME$/Documents/GitHub/dob/buildings</dir>
       <dir>$USER_HOME$/Documents/GitHub/nyctaxmaps</dir>
       <dir>$USER_HOME$/Documents/GitHub/dob</dir>
       <dir>$USER_HOME$/dotfiles.jp/_agross</dir>
@@ -95,6 +94,7 @@
       <dir>$USER_HOME$/Documents/GitHub/holman.dotfiles/bin</dir>
       <dir>$USER_HOME$/Documents/GitHub/holman.dotfiles</dir>
       <dir>$USER_HOME$/.dotfiles/.dotsys/lib</dir>
+      <dir>$USER_HOME$/.dotfiles/.dotsys/builtins</dir>
     </dirStrings>
   </component>
 </application>

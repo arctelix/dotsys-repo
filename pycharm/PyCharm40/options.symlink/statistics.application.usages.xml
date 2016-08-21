@@ -1,121 +1,120 @@
 <application>
   <component name="StatisticsApplicationUsages">
     <group name="JavaScript versions">
+      <project id="simplex" values="DEFAULT" collectionTime="1471543534100" />
       <project id="connector_nyc.py" values="DEFAULT" collectionTime="1454801145214" />
       <project id="nyctaxmaps" values="DEFAULT" collectionTime="1471463131000" />
       <project id="addons" values="DEFAULT" collectionTime="1466088776115" />
-      <project id="dotfiles.jp" values="DEFAULT" collectionTime="1471638186510" />
-      <project id="dotsys-holman" values="DEFAULT" collectionTime="1471307140593" />
+      <project id="dotfiles.jp" values="DEFAULT" collectionTime="1471730873031" />
       <project id="dotsys-repo" values="DEFAULT" collectionTime="1471638186341" />
       <project id="iDebugConsole" values="DEFAULT" collectionTime="1463164052822" />
       <project id="holman.dotfiles" values="DEFAULT" collectionTime="1471453312849" />
       <project id="script.icechannel" values="DEFAULT" collectionTime="1466090222297" />
       <project id="vanillaHelper" values="DEFAULT" collectionTime="1457812619992" />
       <project id="script.istream.dialogs" values="DEFAULT" collectionTime="1466090318403" />
-      <project id="dob" values="DEFAULT" collectionTime="1471638186017" />
-      <project id="simplex" values="DEFAULT" collectionTime="1471543534100" />
+      <project id="dob" values="DEFAULT" collectionTime="1471730872977" />
+      <project id="dotsys-holman" values="DEFAULT" collectionTime="1471307140593" />
     </group>
     <group name="module type">
+      <project id="simplex" values="PYTHON_MODULE" collectionTime="1471543534032" />
       <project id="connector_nyc.py" values="PYTHON_MODULE" collectionTime="1454801145173" />
       <project id="nyctaxmaps" values="PYTHON_MODULE" collectionTime="1471463130806" />
       <project id="addons" values="PYTHON_MODULE" collectionTime="1466088776111" />
-      <project id="dotfiles.jp" values="PYTHON_MODULE" collectionTime="1471638186440" />
-      <project id="dotsys-holman" values="PYTHON_MODULE" collectionTime="1471307140583" />
+      <project id="dotfiles.jp" values="PYTHON_MODULE" collectionTime="1471730873021" />
       <project id="dotsys-repo" values="PYTHON_MODULE" collectionTime="1471638186250" />
       <project id="iDebugConsole" values="PYTHON_MODULE" collectionTime="1463164052818" />
       <project id="holman.dotfiles" values="PYTHON_MODULE" collectionTime="1471453312834" />
       <project id="script.icechannel" values="PYTHON_MODULE" collectionTime="1466090222272" />
       <project id="vanillaHelper" values="PYTHON_MODULE" collectionTime="1457812619902" />
       <project id="script.istream.dialogs" values="PYTHON_MODULE" collectionTime="1466090318399" />
-      <project id="dob" values="PYTHON_MODULE" collectionTime="1471638185699" />
-      <project id="simplex" values="PYTHON_MODULE" collectionTime="1471543534032" />
+      <project id="dob" values="PYTHON_MODULE" collectionTime="1471730872689" />
+      <project id="dotsys-holman" values="PYTHON_MODULE" collectionTime="1471307140583" />
     </group>
     <group name="vcs">
-      <project id="dotsys-holman" values="Git" collectionTime="1471307140583" />
+      <project id="script.istream.dialogs" values="Git" collectionTime="1466090318399" />
       <project id="nyctaxmaps" values="Git" collectionTime="1471463130806" />
       <project id="dotsys-repo" values="Git" collectionTime="1471638186250" />
       <project id="script.icechannel" values="Git" collectionTime="1466090222272" />
       <project id="vanillaHelper" values="Git" collectionTime="1457812619902" />
       <project id="iDebugConsole" values="Git" collectionTime="1463164052818" />
       <project id="holman.dotfiles" values="Git" collectionTime="1471453312834" />
-      <project id="dotfiles.jp" values="Git" collectionTime="1471638186439" />
-      <project id="script.istream.dialogs" values="Git" collectionTime="1466090318399" />
-      <project id="dob" values="Git" collectionTime="1471638185699" />
       <project id="simplex" values="Git" collectionTime="1471543534032" />
+      <project id="dotfiles.jp" values="Git" collectionTime="1471730873021" />
+      <project id="dob" values="Git" collectionTime="1471730872688" />
+      <project id="dotsys-holman" values="Git" collectionTime="1471307140583" />
     </group>
     <group name="run-configuration-type">
       <project id="simplex" values="Python.DjangoServer" collectionTime="1471543534032" />
-      <project id="dob" values="PythonConfigurationType,Python.DjangoServer" collectionTime="1471638185700" />
+      <project id="dob" values="Python.DjangoServer,PythonConfigurationType" collectionTime="1471730872690" />
       <project id="nyctaxmaps" values="Python.DjangoServer" collectionTime="1471463130807" />
     </group>
     <group name="run-configuration-type-temp">
-      <project id="dotfiles.jp" values="PythonConfigurationType" collectionTime="1471638186442" />
-      <project id="dob" values="PythonConfigurationType" collectionTime="1471638185700" />
+      <project id="dotfiles.jp" values="PythonConfigurationType" collectionTime="1471730873027" />
+      <project id="dob" values="PythonConfigurationType" collectionTime="1471730872690" />
     </group>
     <group name="file-type">
-      <project id="connector_nyc.py" values="UNKNOWN,Python" collectionTime="1454801145174" />
-      <project id="nyctaxmaps" values="Locale,MultiMarkdown,UNKNOWN,JSON,XML,ReST,Images,Git file,Bash,CSS,Python,C++,HTML,PLAIN_TEXT,ARCHIVE,JavaScript" collectionTime="1471463130839" />
+      <project id="simplex" values="Less,UNKNOWN,Locale,XML,Git file,HTML,PLAIN_TEXT,Images,JSON,ReST,DATASOURCE_STORAGE,SCSS,C++,CoffeeScript,PATCH,Python,Bash,MultiMarkdown,JavaScript,CSS" collectionTime="1471543534042" />
+      <project id="connector_nyc.py" values="Python,UNKNOWN" collectionTime="1454801145174" />
+      <project id="nyctaxmaps" values="UNKNOWN,MultiMarkdown,Images,XML,Bash,JavaScript,C++,CSS,Locale,ARCHIVE,ReST,JSON,Git file,HTML,PLAIN_TEXT,Python" collectionTime="1471463130839" />
       <project id="addons" values="UNKNOWN" collectionTime="1466088776115" />
-      <project id="dotfiles.jp" values="PLAIN_TEXT,Git file,Locale,XML,Images,MultiMarkdown,UNKNOWN,Python,Bash" collectionTime="1471638186442" />
-      <project id="dotsys-holman" values="Images,CoffeeScript,XML,PLAIN_TEXT,Bash,UNKNOWN,Git file" collectionTime="1471307140591" />
-      <project id="dotsys-repo" values="Bash,YAML,JavaScript,UNKNOWN,PLAIN_TEXT,Git file,XML" collectionTime="1471638186326" />
-      <project id="iDebugConsole" values="JavaScript,XML,MultiMarkdown,UNKNOWN,Git file,HTML,PATCH,CSS,PLAIN_TEXT" collectionTime="1463164052820" />
-      <project id="holman.dotfiles" values="UNKNOWN,YAML,Images,Bash,XML,CoffeeScript,PLAIN_TEXT,MultiMarkdown,Git file,Python" collectionTime="1471453312841" />
-      <project id="script.icechannel" values="PLAIN_TEXT,XML,Images,UNKNOWN,Python" collectionTime="1466090222274" />
-      <project id="vanillaHelper" values="HTML,JavaScript,PLAIN_TEXT,XML,CSS,UNKNOWN,Git file" collectionTime="1457812619925" />
-      <project id="script.istream.dialogs" values="PLAIN_TEXT,UNKNOWN,Images,XML,Python" collectionTime="1466090318400" />
-      <project id="dob" values="Bash,Locale,ReST,UNKNOWN,XML,MultiMarkdown,HTML,JavaScript,SourceMap,Native,JSON,Git file,Python,Images,CSS,PLAIN_TEXT,C++,PATCH" collectionTime="1471638185715" />
-      <project id="simplex" values="Locale,JavaScript,PLAIN_TEXT,Images,CoffeeScript,C++,UNKNOWN,DATASOURCE_STORAGE,SCSS,Bash,JSON,HTML,CSS,Python,MultiMarkdown,Less,XML,Git file,ReST,PATCH" collectionTime="1471543534042" />
+      <project id="dotfiles.jp" values="XML,UNKNOWN,Git file,Images,Bash,PLAIN_TEXT,Python,MultiMarkdown,Locale" collectionTime="1471730873029" />
+      <project id="dotsys-repo" values="JavaScript,Bash,XML,PLAIN_TEXT,YAML,UNKNOWN,Git file" collectionTime="1471638186326" />
+      <project id="iDebugConsole" values="PATCH,Git file,UNKNOWN,MultiMarkdown,JavaScript,PLAIN_TEXT,CSS,HTML,XML" collectionTime="1463164052820" />
+      <project id="holman.dotfiles" values="UNKNOWN,PLAIN_TEXT,Python,XML,MultiMarkdown,Images,Git file,CoffeeScript,YAML,Bash" collectionTime="1471453312841" />
+      <project id="script.icechannel" values="Images,XML,UNKNOWN,PLAIN_TEXT,Python" collectionTime="1466090222274" />
+      <project id="vanillaHelper" values="XML,HTML,PLAIN_TEXT,JavaScript,Git file,UNKNOWN,CSS" collectionTime="1457812619925" />
+      <project id="script.istream.dialogs" values="Python,UNKNOWN,PLAIN_TEXT,Images,XML" collectionTime="1466090318400" />
+      <project id="dob" values="MultiMarkdown,JavaScript,PLAIN_TEXT,XML,C++,Images,SourceMap,PATCH,JSON,HTML,Bash,Python,UNKNOWN,Locale,Git file,CSS,ReST,Native" collectionTime="1471730872726" />
+      <project id="dotsys-holman" values="Git file,Images,XML,PLAIN_TEXT,UNKNOWN,Bash,CoffeeScript" collectionTime="1471307140591" />
     </group>
     <group name="VCS Log">
-      <project id="dob" values="vcs.log.commit.count=45,vcs.log.git.root.count" collectionTime="1471638185716" />
-      <project id="simplex" values="vcs.log.git.root.count,vcs.log.commit.count=240" collectionTime="1471543534044" />
-      <project id="vanillaHelper" values="vcs.log.commit.count=4,vcs.log.git.root.count" collectionTime="1457812619926" />
+      <project id="vanillaHelper" values="vcs.log.git.root.count,vcs.log.commit.count=4" collectionTime="1457812619926" />
+      <project id="simplex" values="vcs.log.commit.count=240,vcs.log.git.root.count" collectionTime="1471543534044" />
     </group>
     <group name="jdbc-datasource">
       <project id="simplex" values="PostgreSQL/9.4.5,PostgreSQL/9.4.5" collectionTime="1471543534100" />
     </group>
     <group name="py-packages">
-      <project id="simplex" values="django-storages,Django,Pillow,gunicorn,boto,django_compressor,timestring,django-admin-sortable,django-allauth,django-picklefield,django-model-utils,psycopg2" collectionTime="1471543534100" />
-      <project id="dob" values="chardet,six,requests,psycopg2,beautifulsoup4,certifi,wheel,oauthlib,Django,python-openid,requests-oauthlib,pytz,html5lib,requesocks,timestring,django-allauth,gunicorn" collectionTime="1471638185774" />
-      <project id="nyctaxmaps" values="psycopg2,dj-database-url,wheel,Django" collectionTime="1471463130960" />
+      <project id="simplex" values="django-allauth,django_compressor,django-model-utils,django-admin-sortable,Pillow,psycopg2,django-storages,timestring,gunicorn,boto,django-picklefield,Django" collectionTime="1471543534100" />
+      <project id="dob" values="requests,requests-oauthlib,timestring,pytz,gunicorn,Django,beautifulsoup4,oauthlib,python-openid,psycopg2,wheel,certifi,html5lib,chardet,six,django-allauth,requesocks" collectionTime="1471730872900" />
+      <project id="nyctaxmaps" values="wheel,dj-database-url,Django,psycopg2" collectionTime="1471463130960" />
     </group>
     <group name="jdbc-driver">
       <project id="simplex" values="org.postgresql.Driver,org.postgresql.Driver" collectionTime="1471543534100" />
     </group>
     <group name="py-interpreter">
+      <project id="simplex" values="Python 2.7.10" collectionTime="1471543534044" />
       <project id="connector_nyc.py" values="Python 2.7.2" collectionTime="1454801145175" />
       <project id="nyctaxmaps" values="Python 2.7.10" collectionTime="1471463130864" />
       <project id="addons" values="Python 2.7.2" collectionTime="1466088776115" />
       <project id="script.icechannel" values="Python 2.7.2" collectionTime="1466090222275" />
-      <project id="dotsys-holman" values="Python 2.7.10" collectionTime="1471307140592" />
       <project id="dotsys-repo" values="Python 2.7.10" collectionTime="1471638186339" />
       <project id="iDebugConsole" values="Python 2.7.2" collectionTime="1463164052820" />
       <project id="holman.dotfiles" values="Python 2.7.10" collectionTime="1471453312844" />
       <project id="vanillaHelper" values="Python 2.7.2" collectionTime="1457812619926" />
       <project id="script.istream.dialogs" values="Python 2.7.2" collectionTime="1466090318401" />
-      <project id="dob" values="Python 2.7.10" collectionTime="1471638185716" />
-      <project id="simplex" values="Python 2.7.10" collectionTime="1471543534044" />
+      <project id="dob" values="Python 2.7.10" collectionTime="1471730872734" />
+      <project id="dotsys-holman" values="Python 2.7.10" collectionTime="1471307140592" />
     </group>
     <group name="frameworks">
       <project id="simplex" values="django" collectionTime="1471543534032" />
-      <project id="dob" values="django" collectionTime="1471638185699" />
+      <project id="dob" values="django" collectionTime="1471730872688" />
       <project id="nyctaxmaps" values="django" collectionTime="1471463130806" />
     </group>
     <group name="javaScript Scope Usages">
+      <project id="simplex" values="Project,Project" collectionTime="1471543534100" />
       <project id="connector_nyc.py" values="Project,Project" collectionTime="1454801145214" />
       <project id="nyctaxmaps" values="Project,Project" collectionTime="1471463131000" />
       <project id="addons" values="Project,Project" collectionTime="1466088776115" />
-      <project id="dotfiles.jp" values="Project,Project" collectionTime="1471638186510" />
-      <project id="dotsys-holman" values="Project,Project" collectionTime="1471307140593" />
+      <project id="dotfiles.jp" values="Project,Project" collectionTime="1471730873031" />
       <project id="dotsys-repo" values="Project,Project" collectionTime="1471638186341" />
       <project id="iDebugConsole" values="Project,Project" collectionTime="1463164052822" />
       <project id="holman.dotfiles" values="Project,Project" collectionTime="1471453312849" />
       <project id="script.icechannel" values="Project,Project" collectionTime="1466090222297" />
       <project id="vanillaHelper" values="Project,Project" collectionTime="1457812619992" />
       <project id="script.istream.dialogs" values="Project,Project" collectionTime="1466090318403" />
-      <project id="dob" values="Project,Project" collectionTime="1471638186017" />
-      <project id="simplex" values="Project,Project" collectionTime="1471543534100" />
+      <project id="dob" values="Project,Project" collectionTime="1471730872977" />
+      <project id="dotsys-holman" values="Project,Project" collectionTime="1471307140593" />
     </group>
   </component>
   <component name="UsageTrigger">
@@ -141,7 +140,7 @@
       <entry feature="ide.settings.Project_Structure" count="2" />
       <entry feature="ide.settings.Terminal" count="8" />
       <entry feature="ide.settings.Version_Control" count="2" />
-      <entry feature="ideaapp.started" count="73" />
+      <entry feature="ideaapp.started" count="74" />
       <entry feature="tips.of.the.day.next" count="5" />
       <entry feature="uml.ShowDiagram.DIFF.popup" count="3" />
       <entry feature="welcome.screen.WelcomeScreen.Configure" count="7" />

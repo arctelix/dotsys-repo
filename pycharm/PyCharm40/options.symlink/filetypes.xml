@@ -11,9 +11,9 @@
       <mapping pattern="mvc.js" type="JavaScript" />
       <mapping pattern="snagleit-debug" type="JavaScript" />
       <mapping ext="6" type="JavaScript" />
+      <mapping pattern="test" type="PLAIN_TEXT" />
       <mapping pattern="shell" type="PLAIN_TEXT" />
       <mapping pattern="user" type="PLAIN_TEXT" />
-      <mapping pattern="test" type="PLAIN_TEXT" />
       <mapping pattern=".exclude-platforms" type="PLAIN_TEXT" />
       <mapping pattern="utils" type="PLAIN_TEXT" />
       <mapping ext="dslog" type="PLAIN_TEXT" />

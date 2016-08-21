@@ -5,7 +5,7 @@
     <feature id="navigation.popup.camelprefix" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="editing.completion.changeSorting" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="codeassists.quickjavadoc.lookup" count="0" last-shown="0" last-used="0" shown-count="0" />
-    <feature id="codeassists.comment.line" count="310" last-shown="0" last-used="1471470064849" shown-count="0" />
+    <feature id="codeassists.comment.line" count="313" last-shown="0" last-used="1471722652035" shown-count="0" />
     <feature id="navigation.popup.file" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="codeassists.quickdefinition.lookup" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="SearchEverywhere" count="19" last-shown="0" last-used="1471030426134" shown-count="0" />
@@ -16,7 +16,7 @@
     <feature id="codeassists.quickjavadoc.ctrln" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="editing.completion.finishByCtrlDot" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="find.completion" count="0" last-shown="0" last-used="0" shown-count="0" />
-    <feature id="editing.completion.replace" count="21" last-shown="0" last-used="1464363744153" shown-count="0" />
+    <feature id="editing.completion.replace" count="22" last-shown="0" last-used="1471560976560" shown-count="0" />
     <feature id="tag.name.completion" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="ui.recentchanges" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="editing.select.word" count="249" last-shown="0" last-used="1471037517349" shown-count="0" />
@@ -26,23 +26,23 @@
     <feature id="navigation.popup.wildcards" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="navigation.goto.declaration" count="304" last-shown="0" last-used="1471034898258" shown-count="0" />
     <feature id="editing.completion.cancelByControlArrows" count="0" last-shown="0" last-used="0" shown-count="0" />
-    <feature id="editing.completion.basic" count="564" last-shown="0" last-used="1471471574076" shown-count="0" />
+    <feature id="editing.completion.basic" count="565" last-shown="0" last-used="1471560976585" shown-count="0" />
     <feature id="codeassists.quickdefinition" count="0" last-shown="1450729250008" last-used="0" shown-count="1" />
     <feature id="ui.scheme.quickswitch" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="find.recent.search" count="1" last-shown="0" last-used="1453848601314" shown-count="0" />
     <feature id="navigation.recent.files" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="navigation.popup.file.structure" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="editing.completion.camelHumps" count="11" last-shown="0" last-used="1462939734260" shown-count="0" />
-    <feature id="refactoring.rename" count="1032" last-shown="0" last-used="1471477411289" shown-count="0" />
+    <feature id="refactoring.rename" count="1047" last-shown="0" last-used="1471723155937" shown-count="0" />
     <feature id="codeassists.quickjavadoc" count="0" last-shown="1450729250008" last-used="0" shown-count="1" />
     <feature id="navigation.select.in" count="0" last-shown="0" last-used="0" shown-count="0" />
     <feature id="editing.completion.finishByDotEtc" count="1" last-shown="1450729250008" last-used="1453424595318" shown-count="1" />
     <completionStatsTag>
-      <option name="sparedCharacters" value="3166" />
-      <option name="invocations" value="381" />
+      <option name="sparedCharacters" value="3169" />
+      <option name="invocations" value="382" />
       <option name="startDate" value="1446699600000" />
-      <option name="dayCount" value="92" />
-      <option name="lastDate" value="1471406400000" />
+      <option name="dayCount" value="93" />
+      <option name="lastDate" value="1471492800000" />
     </completionStatsTag>
     <fixesStatsTag>
       <option name="invocations" value="89" />
