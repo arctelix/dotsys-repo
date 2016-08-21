@@ -1,6 +1,6 @@
 
 # activate virtualenv
-if [ $PLATFORM_G != windows ];then
+if [ "$PLATFORM_G" != "windows" ];then
     alias ave='source bin/activate'
 else
     alias ave='Scripts\activate'
