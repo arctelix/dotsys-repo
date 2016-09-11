@@ -2,7 +2,15 @@
 
 debug_shell "  - arctelix vim aliases loaded $PLATFORM_S"
 
+VISUAL='vim'
+
 if [ "$PLATFORM_S" = mac ]; then
     alias vim='mvim -v'
+    alias vi='mvim -v'
+
+    # Set as default editor
+    VISUAL='mvim -v'
 fi
+
+export VISUAL
 
