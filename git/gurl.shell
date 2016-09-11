@@ -1,0 +1,123 @@
+#!/bin/bash
+
+# g for gurl - A git wrapper with a url shorthand syntax
+#
+# Author: arctelix@gmail.com
+# Licence: MIT
+
+gurl () {
+    local servers=( 'gh|github'  'bb|bitbucket' )
+    local help="
+        \r=================================================
+        \rg for gurl - A git wrapper with a url shorthand syntax
+        \r-------------------------------------------------
+        \rWhenever get expects <url> you may use
+        \r    <server> <user>/<repo>
+        \rOr omit user to use your .gitconfig user.name
+        \r    <server> <repo>
+        \r
+        \raliases:
+        \r    g   = gurl
+        \r    gc  = g clone <server> <user>/<repo>
+        \r    gra = g remote add
+        \r    grs = g remote show
+        \r    grao = g remote add origin
+        \r
+        \rnote: Your .gitconfig aliases will work as well
+        \r    git config alias.cl clone
+        \r    g cl <server> <user>/<repo>
+        \r
+        \rEquivalent examples if <user> = config user.name:
+        \r    $ git clone http://github.com/<user>/<repo>
+        \r    $ g clone gh <user>/<repo>
+        \r    $ g clone gh <repo>
+        \r    $ gc gh <repo>
+        \r
+        \r    $ git remote add origin http://github.com/<user>/<repo>
+        \r    $ g remote add origin <user>/<repo>
+        \r    $ g remote add origin <repo>
+        \r    $ gra origin <repo>
+        \r    $ grao <repo>
+        \r
+        \ruse 'g servers' for a list of available servers
+        \r=================================================
+        \n"
+
+    local url url_req args r
+    args=()
+
+    # If no args display gurl & git help
+    if ! [ "$1" ]; then printf "$help"; git; fi
+
+    case "$1" in
+        # only clone and remote command require url
+        clone | remote )        args+=( "$1" ); shift ;;
+        # abort on all other
+        help | --help )         printf "$help" ; return ;;
+        servers )               printf "$servers" ; return ;;
+        * )                     git "$@"; return;;
+    esac
+
+    # Collect additional args and check for url
+    while [[ $# > 0 ]] ; do
+        # check after url keys and always skip options
+        if ! [[ "$1" = "-"* ]] && [[ "${args[*]}" =~ clone.*|.*add.*|.*set-url.* ]]; then
+            url="$(_gurl "$1" "$2")"
+            url_req=true
+            if [ "$url" ]; then shift; shift; fi
+        fi
+        args+=( "${url:-$1}" )
+        shift
+    done
+
+    # Execute git command
+    git "${args[@]}"
+    r=$?
+
+    # Check for errors
+    if [ "$url_req" ]; then
+
+        # Git error with url, show gurl output
+        if [ $r -ne 0 ] && [ "$url" ];then
+            echo "gurl : git ${args[@]}" 2>&1
+
+        # No http in args, likely a server mismatch
+        elif ! [[ "${args[*]}" =~ .*http.* ]];then
+            echo "gurl error: server not found in" 2>&1
+            echo "> git ${args[@]}"
+            echo "use 'g help' for usage, valid servers:" 2>&1
+            printf "%s\n" "${servers[@]}" 2>&1
+        fi
+    fi
+}
+
+alias g='gurl'
+alias gc='gurl clone'
+alias gra='gurl remote add'
+alias grs='gurl remote show'
+alias grao='gurl remote add origin'
+
+# Returns a full url to a repo using a <server shortcut> and <user/repo>
+# ie: git_url <server> <user/repo>
+# You can omit the user to use git config user.name
+# ie: git_url <server> <repo>
+_gurl () {
+    local url server user repo
+
+    # parse user/repo
+    user="${2%/*}"
+    repo="${2#*/}"
+    if [[ "$2" != *"/"* ]]; then
+        user="$(git config user.name || echo "ERROR: 'git config user.name' does not exist" 1>&2 )"
+    fi
+
+    # server choices
+    case "$1" in
+    gh | github )       url="github.com";;
+    bb | bitbucket )    url="${user}@bitbucket.org";;
+    esac
+
+    if [ "$url" ]; then
+        echo "https://$url/$user/$repo.git"
+    fi
+}
