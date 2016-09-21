@@ -1,10 +1,10 @@
 
 # activate virtualenv
 if [ "$PLATFORM_G" != "windows" ];then
-    alias ave='source bin/activate'
+    alias va='source bin/activate'
 else
-    alias ave='Scripts\activate'
+    alias va='Scripts\activate'
 fi
 
 # deactivate virtualenv
-alias dve='deactivate'
+alias vd='deactivate'
