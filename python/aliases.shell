@@ -8,3 +8,7 @@ fi
 
 # deactivate virtualenv
 alias vd='deactivate'
+
+# Django
+alias pm='python manage.py'
+alias pmrs='python manage.py runserver'
