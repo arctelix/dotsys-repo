@@ -7,3 +7,9 @@ gpip () {
    pip "$@"
    PIP_REQUIRE_VIRTUALENV=true
 }
+
+gpip3 () {
+   PIP_REQUIRE_VIRTUALENV=""
+   pip3 "$@"
+   PIP_REQUIRE_VIRTUALENV=true
+}
