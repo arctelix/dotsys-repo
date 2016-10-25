@@ -1,4 +1,5 @@
 #!/bin/sh
 
 source gurl -q
+alias git='gurl'
 

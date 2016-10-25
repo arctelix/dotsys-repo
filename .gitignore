@@ -1,3 +1,4 @@
 *.private
 *.dslog
 .idea
+*.DS_Store

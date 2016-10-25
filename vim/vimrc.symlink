@@ -187,6 +187,7 @@ nnoremap <M-H> <C-W>H
 " zooom split to tab
 "nnoremap <expr> <M-z> exists("t:z_tab")
 "  \ ? ':tabc<CR>' : ':tab sp<CR>:let t:z_tab=1<CR>'
+
 nnoremap <M-z> :ZoomTab<CR>
 command! ZoomTab call s:ZoomTabTog()
 
@@ -206,10 +207,13 @@ noremap <F4> :set hlsearch! hlsearch?<CR>
 nnoremap <space> za
 
 "Paste Mode
+set clipboard=unnamedplus,unnamed,autoselect
+nnoremap <M-p> :set invpaste paste?<CR>
 set pastetoggle=<M-p>
+set showmode
 
 " Copy to system clipboard
-vnoremap <C-c> "*y
+nnoremap <M-c> gg"+yG
 
 
 "----------------
