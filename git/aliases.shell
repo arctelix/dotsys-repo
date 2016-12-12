@@ -1,5 +1,7 @@
 #!/bin/sh
 
+! cmd_exists gurl && return
+
 source gurl -q
 alias git='gurl'
 
