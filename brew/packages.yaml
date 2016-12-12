@@ -2,4 +2,4 @@ cmake:
 jpeg: x
 python:
 unrar:
-p7zip:
+p7zip:nginx:

@@ -206,8 +206,10 @@ noremap <F4> :set hlsearch! hlsearch?<CR>
 " Enable folding with the spacebar
 nnoremap <space> za
 
-"Paste Mode
+"Use system clipboard as default
 set clipboard=unnamedplus,unnamed,autoselect
+
+"Paste Mode
 nnoremap <M-p> :set invpaste paste?<CR>
 set pastetoggle=<M-p>
 set showmode
