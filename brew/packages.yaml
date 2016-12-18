@@ -3,3 +3,5 @@ jpeg: x
 python:
 unrar:
 p7zip:nginx:
+wget:
+bats:
