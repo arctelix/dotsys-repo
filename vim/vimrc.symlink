@@ -79,9 +79,6 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
-" delete / backspace key (allow bs past insert start point)
-" set backspace=indent,eol,start
-
 " status bar and numbering
 set laststatus=2   			" Always show the statusline
 let g:Powerline_symbols = 'fancy'	" Plowerline fancy symbols
