@@ -1,4 +1,6 @@
-" vundle
+" ======================
+" VUNDLE
+" ======================
 
 set nocompatible              " required
 filetype off                  " required
@@ -9,14 +11,17 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 
-"-------------- vundle plugins  -------------
+" ======================
+" VUNDLE PLUGINS
+" ======================
+
 " note: older Vundle used Bundle vs Plugin
 
 " Status bar
 Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 " Improoved folding
-Plugin 'tmhedberg/SimpylFold' 
+Plugin 'tmhedberg/SimpylFold'
 
 " PEP8 indentation
 Plugin 'vim-scripts/indentpython.vim'
@@ -43,7 +48,7 @@ Plugin 'jistr/vim-nerdtree-tabs'
 " Commenting
 Plugin 'scrooloose/nerdcommenter'
 
-" Super Search 
+" Super Search
 Plugin 'kien/ctrlp.vim'
 
 " Git integration
@@ -55,18 +60,21 @@ Plugin 'christoomey/vim-tmux-navigator'
 " Learn vim the hard way!
 Plugin 'wikitopian/hardmode'
 
-"-------------- end plugins ---------------
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-" - GENERAL
+" ======================
+" GENERAL
+" ======================
 
 set encoding=utf-8
-syntax on				" syntax highlighting
-set nu 					" line numbering	
-set hlsearch				" highlight search results
+syntax on				            " syntax highlighting
+set nu 					            " line numbering
+set hlsearch				        " highlight search results
 set timeoutlen=1000 ttimeoutlen=0	" Remove delay form esc key
-let mapleader = ","			" Custom  leader
+let mapleader = ","			        " Custom  leader
+
+" generic formatting
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -75,28 +83,39 @@ set expandtab
 set laststatus=2   			" Always show the statusline
 let g:Powerline_symbols = 'fancy'	" Plowerline fancy symbols
 
-" enable hardmode
-autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
+" ======================
+" HARDMODE
+" ======================
+
+" enable hard mode on start
+" autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 nnoremap <leader>h :call ToggleHardMode()<CR>
 
-" - FOLDING
+" ======================
+" FOLDING
+" ======================
 
 set foldmethod=indent
 set foldlevel=99
 let g:SimpylFold_docstring_preview=1	" Preview doc strings
 
 
-" - FILE TREE
+" ======================
+" FILE TREE
+" ======================
 
 let NERDTreeIgnore=['\.pyc$', '\~$'] 	"ignore files in NERDTree
 
-" - AUTO COMPLETE
+" ======================
+" AUTO COMPLETE
+" ======================
 
 let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
-
-" - PYTHON RELATED
+" ======================
+" PYTHON
+" ======================
 
 " Python proper PEP8 indentation
 au BufNewFile,BufRead *.py
@@ -130,16 +149,20 @@ au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /^\t\+/
 " Make trailing whitespace be flagged as bad.
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
-" JS HTML CSS RELATED
 
-au BufNewFile,BufRead *.js, *.html, *.css
-    \ set tabstop=2
-    \ set softtabstop=2
-    \ set shiftwidth=2
+" ======================
+" JS HTML CSS
+" ======================
+
+au BufNewFile,BufRead *.js,*.html,*.css
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4
 
 
-" - COLOR
-
+" ======================
+" COLORS
+" ======================
 
 let g:solarized_termcolors = 256
 
@@ -151,10 +174,14 @@ else
   colorscheme zenburn
 endif
 
-" - KEY MAPS
 
+" ======================
+" KEY MAPS
+" ======================
 
 " fix meta-keys which generate <Esc>a .. <Esc>z
+" warning: this also breaks macros with <Esc>
+
 let c='a'
 while c <= 'z'
   exec "set <M-".c.">=\e".c
@@ -163,6 +190,10 @@ while c <= 'z'
   exec "imap \e".toupper(c)." <M-".toupper(c).">"
   let c = nr2char(1+char2nr(c))
 endw
+
+" Temp fix for macros with <Esc>
+" Also breaks arrow keys in insert mode (do I care?)
+inoremap <Esc> <C-c>
 
 " split navigations (replaced by  vim-tmux-navigator)
 "nnoremap <C-J> <C-W><C-J>
@@ -173,6 +204,7 @@ endw
 " sane split resizing (mirros .tmux.conf)
 autocmd VimResized * wincmd =
 
+" resize windows
 nnoremap <M-k> <C-W>-
 nnoremap <M-j> <C-W>+
 nnoremap <M-l> <C-W>>
@@ -206,8 +238,10 @@ noremap <F4> :set hlsearch! hlsearch?<CR>
 " Enable folding with the spacebar
 nnoremap <space> za
 
-"Paste Mode
+"Use system clipboard as default
 set clipboard=unnamedplus,unnamed,autoselect
+
+"Paste Mode
 nnoremap <M-p> :set invpaste paste?<CR>
 set pastetoggle=<M-p>
 set showmode
@@ -216,9 +250,9 @@ set showmode
 nnoremap <M-c> gg"+yG
 
 
-"----------------
+" ======================
 " PLUGIN KEY MAPS
-"----------------
+" ======================
 
 " Nerdtree
 map <C-n> :NERDTreeToggle<CR>
