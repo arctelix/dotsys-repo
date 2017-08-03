@@ -11,4 +11,6 @@ alias vd='deactivate'
 
 # Django
 alias pm='python manage.py'
-alias pmrs='python manage.py runserver'
+alias pmr='python manage.py runserver'
+alias pmmm='python manage.py makemigrations'
+alias pmm='python manage.py migrate'
