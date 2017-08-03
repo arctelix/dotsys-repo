@@ -3,3 +3,5 @@
 # (sh, bash, ksh, etc.)
 # ----------------------------------
 debug_shell "  - arctelix .shellrc.symlink loaded"
+
+export PATH=~/Library/Python/2.7/bin/:$PATH
