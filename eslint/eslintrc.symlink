@@ -1,0 +1,10 @@
+{
+    "plugins": [
+        "chai-friendly", "mocha"
+    ],
+    "rules": {
+        "no-unused-expressions": 0,
+        "chai-friendly/no-unused-expressions": 2,
+        "mocha/no-exclusive-tests": "error"
+    }
+}
