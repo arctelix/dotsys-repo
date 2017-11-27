@@ -1,12 +1,10 @@
 install () {
-    echo "..installing vim"
     # Install vundle
     local vundle="${HOME}/.vim/bundle/Vundle.vim"
     if [ ! -f "$vundle" ]; then
-        echo "...installing vundle"
         git clone https://github.com/VundleVim/Vundle.vim.git "$vundle"
     fi
-    echo "....installing vim plugins"
+
     # Install plugins with vundle
     vim +PluginInstall +qall
 
