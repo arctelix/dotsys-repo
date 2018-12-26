@@ -6,11 +6,51 @@ debug_shell "  - arctelix .shellrc.symlink loaded"
 
 export PATH=~/Library/Python/2.7/bin/:$PATH
 
-# Add vteam proxy
-if [ $PLATFORM_S = 'mac' ]; then
-  /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | awk '/ SSID/ {print substr($0, index($0, $2))}' | grep VTEAM > /dev/null
-  if [ $? -eq 0 ]; then
-    export HTTP_PROXY='http://server.proxy.vzwcorp.com:9290/'
-    export HTTPS_PROXY='https://server.proxy.vzwcorp.com:9290/'
+# ========================================
+# Toggle VTEAM proxy settings
+# ----------------------------------------
+# vteam - auto detect VTEAM network on mac
+# vteam [on, off] - manually toggle vteam
+# ========================================
+
+vteam () {
+  local IS_VTEAM="$1"
+
+  if [ ! "$IS_VTEAM" ] && [ "$PLATFORM_S" = 'mac' ]; then
+    IS_VTEAM=$(/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | awk '/ SSID/ {print substr($0, index($0, $2))}' | grep VTEAM > /dev/null && echo 'on' || echo 'off')
   fi
-fi
+
+  echo "  vteam = $IS_VTEAM"
+
+  if [ "$IS_VTEAM" = 'on' ]; then
+    proxy='server.proxy.vzwcorp.com:9290'
+    export HTTP_PROXY="$proxy"
+    export HTTPS_PROXY="$proxy"
+    export ALL_PROXY="$proxy"
+    export auto_proxy="file:///home/verizon.pac"
+
+    npm config set proxy "http://${proxy}"
+    npm config set https-proxy "http://${proxy}"
+    npm config set registry https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual
+    npm config set strict-ssl=true
+
+    if [ -x "$(command -v apm)" ]; then
+      apm config set proxy "http://${proxy}"
+      apm config set https-proxy "http://${proxy}"
+      apm config set registry http://registry.npmjs.org
+    fi
+
+  else
+    npm config rm proxy null
+    npm config rm https-proxy null
+    npm config set registry http://registry.npmjs.org
+
+    if [ -x "$(command -v apm)" ]; then
+      apm config rm proxy null
+      apm config rm https-proxy null
+      apm config set registry http://registry.npmjs.org
+    fi
+  fi
+}
+
+vteam
